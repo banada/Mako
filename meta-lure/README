@@ -1,0 +1,55 @@
+
+meta-lure
+==========
+
+This Yocto layer contains test scripts and kernel modules
+for MinnowBoard Max lures.
+
+
+Supported Lures
+================
+
+Calamari Lure
+    http://elinux.org/Calamari_Lure
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+
+Adding the meta-lure layer to your build
+=========================================
+
+Add the location of the meta-lure layer and any other layers needed
+to /path/to/yocto/mybuilddirectory/bblayers.conf:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    ...
+    /path/to/yocto/meta-lure \
+    "
+
+To build for the MinnowBoard Max, please see meta-mako:
+    https://github.com/banada/Mako
+
+
+Patches
+=======
+
+Please submit any patches against the meta-lure layer to the
+meta-lure mailing list (non-existant) and cc: the maintainer:
+
+Maintainer: Nathaniel Chen 
+    <nathanielchen1@gmail.com>
+    GitHub: @banada

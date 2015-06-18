@@ -1,0 +1,12 @@
+diff --git a/Lib/ctypes/util.py b/Lib/ctypes/util.py
+index 7aee0ef..2ffa43a 100644
+--- a/Lib/ctypes/util.py
++++ b/Lib/ctypes/util.py
+@@ -189,7 +189,6 @@ elif os.name == "posix":
+             else:
+                 machine = os.uname()[4] + '-64'
+             mach_map = {
+-                'x86_64-64': 'libc6,x86-64',
+                 'ppc64-64': 'libc6,64bit',
+                 'sparc64-64': 'libc6,64bit',
+                 's390x-64': 'libc6,64bit',

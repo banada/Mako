@@ -1,0 +1,77 @@
+
+meta-mako
+=========
+
+This Yocto layer contains tools and packages for makers who want
+to use MinnowBoard MAX or Intel Edison in their projects.
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+  URI: git://git.yoctoproject.org/meta-intel
+  layers: meta-intel
+  branch: fido 
+
+  URI: xxxx
+  layers: meta-openembedded/meta-oe
+  branch: master
+
+  URI: xxxx
+  layers: meta-openembedded/meta-webserver
+  branch: master
+
+  URI: xxxx
+  layers: meta-openembedded/meta-python
+  branch: master
+ 
+  URI: xxxx
+  layers: meta-openembedded/meta-networking
+  branch: master
+  
+  URI: xxxx
+  layers: meta-virtualization
+  branch: master
+  
+
+Patches
+=======
+
+Please submit any patches against the meta-mako layer to the
+meta-mako mailing list (non-existant) and cc: the maintainer:
+
+Maintainer: Nathaniel Chen <nathanielchen1@gmail.com>
+
+
+Adding the meta-mako layer to your build
+===============================================
+
+To build for the MinnowBoard Max, you need to change the following line
+in /path/to/yocto/mybuilddirectory/conf/local.conf:
+
+  MACHINE ??= "intel-corei7-64"
+
+Add the location of the meta-mako layer and any other layers needed
+to /path/to/yocto/mybuilddirectory/bblayers.conf:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-mako \
+    /path/to/yocto/meta-intel \
+    /path/to/yocto/meta-openembedded/meta-oe \
+    /path/to/yocto/meta-openembedded/meta-python \
+    /path/to/yocto/meta-openembedded/meta-webserver \
+    /path/to/yocto/meta-openembedded/meta-networking \
+    /path/to/yocto/meta-virtualization \
+    "
+
