@@ -5,11 +5,11 @@ Yocto layers for [MinnowBoard MAX](http://www.minnowboard.org/meet-minnowboard-m
 Use meta-mako to build an image with development tools commonly used by makers already installed.
 
 meta-mako depends on:
-    - meta-openembedded/meta-oe
-    - meta-openembedded/meta-python
-    - meta-openembedded/meta-webserver
-    - meta-openembedded/meta-networking
-    - meta-intel
+    * meta-openembedded/meta-oe
+    * meta-openembedded/meta-python
+    * meta-openembedded/meta-webserver
+    * meta-openembedded/meta-networking
+    * meta-intel
 
 After adding layer dependencies, run
 
@@ -23,4 +23,4 @@ to build an image.
 Use meta-lure to add support for [MinnowBoard MAX](http://www.minnowboard.org/meet-minnowboard-max) lures to your image.
 
 Current lures:
-    - Calamari Lure
+    * Calamari Lure
