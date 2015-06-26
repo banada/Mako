@@ -1,4 +1,4 @@
-![alt text](https://github.com/banada/Mako/mako.png)
+![alt text](https://github.com/banada/Mako/blob/master/mako.png)
 
 # Mako
 Yocto layers for [MinnowBoard MAX](http://www.minnowboard.org/meet-minnowboard-max) and [Intel® Edison](https://software.intel.com/en-us/iot/hardware/edison?utm_source=Covario&utm_medium=Paid%20search&utm_content=Q2%20IoT%20SEM%20Campaign%20-%20Covario&utm_campaign=IoT%20SEM%20Covario). Built with makers in mind.
