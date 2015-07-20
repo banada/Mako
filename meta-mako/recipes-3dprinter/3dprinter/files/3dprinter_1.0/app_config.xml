@@ -1,9 +1,0 @@
-<uwsgi>
-     <pythonpath>/usr/share/3dprinter-1.0</pythonpath>
-     <module>myapp</module>
-     <callable>app</callable>
-     <socket>127.0.0.1:5000</socket>
-     <master/>
-     <processes>3</processes>
-     <memory-report/>
-</uwsgi>
