@@ -11,6 +11,7 @@ meta-mako depends on:
 - meta-openembedded/meta-webserver
 - meta-openembedded/meta-networking
 - meta-intel
+- meta-intel-iot-middleware
 
 After adding layer dependencies, run
 
